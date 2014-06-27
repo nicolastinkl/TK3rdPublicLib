@@ -8,10 +8,6 @@
 
 #import "MDAppDelegate.h"
 #import "MDTools.h"
-#import "MMDrawerController.h"
-#import "MMDrawerVisualState.h"
-#import "MDDrawerVisualStateManager.h"
-#import "MMNavigationController.h"
 #import "MDProtocol.h"
 #import <Objection.h>
 #import "TKUtilsMacro.h"
@@ -21,19 +17,6 @@
 #import "AlixPayResult.h"
 #import "DataVerifier.h"
 #import <JPush/APService.h>
-
-/*!
- *  objection module
- */
-#import "MDMyExpressModule.h"
-#import "MDMyOrderModule.h"
-#import "MDRealNameAuthModule.h"
-#import "MDModifyPersonalInfoModule.h"
-#import "MDRealNameAuthModule.h"
-#import "MDRechargeModule.h"
-#import "MDFeedEasyCenterModule.h"
-#import "MDSideDrawerModule.h"
-#import "MDMyPermissionsDetailModule.h"
 
 #import "Constant.h"
 //#import "MDPaySuccessViewController.h"
@@ -80,7 +63,7 @@ NSString * const JPUSHKEY = @"4defe429328fb4a0fcd2f40c";
 
 @interface MDAppDelegate ()
 
-@property (nonatomic,strong) MMDrawerController * drawerController;
+//@property (nonatomic,strong) MMDrawerController * drawerController;
 
 @end
 
@@ -91,6 +74,7 @@ NSString * const JPUSHKEY = @"4defe429328fb4a0fcd2f40c";
  */
 -(void) setupModule
 {
+    /*
     JSObjectionInjector *injector = [JSObjection defaultInjector]; // [1]
     injector = injector ? : [JSObjection createInjector]; // [2]
     injector = [injector withModules:
@@ -104,6 +88,7 @@ NSString * const JPUSHKEY = @"4defe429328fb4a0fcd2f40c";
                 [[MDSideDrawerModule alloc] init],
                 [[MDMyPermissionsDetailModule alloc] init],nil]; // [3]
     [JSObjection setDefaultInjector:injector]; // [4]
+     */
 }
 
 
@@ -134,21 +119,21 @@ NSString * const JPUSHKEY = @"4defe429328fb4a0fcd2f40c";
     
 //    UIViewController * leftSideDrawerViewController = [MDTools loadController:[MDSideDrawerViewController class]];
 //    UIViewController * centerViewController = [MDTools loadController:[MDFeedEasyCenterTableViewController class]];
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
-    self.viewcontrollersDicty = dict;
-    
-    [self setupModule];
-
-    
-    UIViewController <MDSideDrawerViewControllerProtocol> *leftSideDrawerViewController = [[JSObjection defaultInjector] getObject:@protocol(MDSideDrawerViewControllerProtocol)];
-    
-    UIViewController <MDFeedEasyCenterTableViewControllerProtocol> *centerViewController = [[JSObjection defaultInjector] getObject:@protocol(MDFeedEasyCenterTableViewControllerProtocol)];
-    
-    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:centerViewController];
-    
-    [self.viewcontrollersDicty setValue:navigationController forKey:@"centerView"];
-    
-    [navigationController setRestorationIdentifier:@"MDCenterNavigationControllerRestorationKey"];
+//    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+//    self.viewcontrollersDicty = dict;
+//    
+//    [self setupModule];
+//
+//    
+//    UIViewController <MDSideDrawerViewControllerProtocol> *leftSideDrawerViewController = [[JSObjection defaultInjector] getObject:@protocol(MDSideDrawerViewControllerProtocol)];
+//    
+//    UIViewController <MDFeedEasyCenterTableViewControllerProtocol> *centerViewController = [[JSObjection defaultInjector] getObject:@protocol(MDFeedEasyCenterTableViewControllerProtocol)];
+//    
+//    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:centerViewController];
+//    
+//    [self.viewcontrollersDicty setValue:navigationController forKey:@"centerView"];
+//    
+//    [navigationController setRestorationIdentifier:@"MDCenterNavigationControllerRestorationKey"];
     
     /* if(OSVersionIsAtLeastiOS7()){
         UINavigationController * leftSideNavController = [[MMNavigationController alloc] initWithRootViewController:leftSideDrawerViewController];
@@ -164,7 +149,7 @@ NSString * const JPUSHKEY = @"4defe429328fb4a0fcd2f40c";
                                  initWithCenterViewController:navigationController
                                  leftDrawerViewController:leftSideDrawerViewController
                                  rightDrawerViewController:nil];
-    }*/
+    }
     
     self.drawerController = [[MMDrawerController alloc]
                              initWithCenterViewController:navigationController
@@ -193,7 +178,7 @@ NSString * const JPUSHKEY = @"4defe429328fb4a0fcd2f40c";
         [self.window setTintColor:tintColor];
     }
     [self.window setRootViewController:self.drawerController];
-    
+    */
     return YES;
 }
 
@@ -257,11 +242,11 @@ NSString * const JPUSHKEY = @"4defe429328fb4a0fcd2f40c";
     [APService setAlias:@"" callbackSelector:@selector(callbackwithMsg:) object:self];
 
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:StoryboardWithName_LoginWithRegsiter bundle:nil];
-    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:[storyboard instantiateInitialViewController]];
-    navigationController.navigationBarHidden = YES;
-    [self.drawerController presentViewController:navigationController animated:NO completion:^{
-    }];
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:StoryboardWithName_LoginWithRegsiter bundle:nil];
+//    UINavigationController * navigationController = [[MMNavigationController alloc] initWithRootViewController:[storyboard instantiateInitialViewController]];
+//    navigationController.navigationBarHidden = YES;
+//    [self.drawerController presentViewController:navigationController animated:NO completion:^{
+//    }];
 }
 
 /*!
@@ -308,6 +293,7 @@ NSString * const JPUSHKEY = @"4defe429328fb4a0fcd2f40c";
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+/*
 - (UIViewController *)application:(UIApplication *)application viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder
 {
     NSString * key = [identifierComponents lastObject];
@@ -342,7 +328,7 @@ NSString * const JPUSHKEY = @"4defe429328fb4a0fcd2f40c";
         }
     }
     return nil;
-}
+}*/
 
 //独立客户端回调函数
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
