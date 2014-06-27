@@ -1,5 +1,5 @@
 
-##ahout TK34d lib
+##about TK34d lib
 
 1. a library with objective-c for quick make a oc project with mine
 2. you can make some json parser fastest than any json model
