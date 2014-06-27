@@ -1,0 +1,106 @@
+PODS:
+  - AFNetworking (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.4):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.4)
+  - AFNetworking/Security (2.2.4)
+  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/UIKit (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CHTCollectionViewWaterfallLayout (0.7)
+  - EGOCache (2.1)
+  - FontAwesome+iOS (0.1.1)
+  - iOS-WebP (0.3)
+  - JPush (1.6.3)
+  - JSONKit (1.5pre)
+  - JSONModel (0.13.0)
+  - MHPrettyDate (1.1.1)
+  - MMDrawerController (0.5.5):
+    - MMDrawerController/Core
+    - MMDrawerController/MMDrawerBarButtonItem
+    - MMDrawerController/MMDrawerVisualStates
+    - MMDrawerController/Subclass
+  - MMDrawerController/Core (0.5.5)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.5):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.5):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.5):
+    - MMDrawerController/Core
+  - Objection (1.4)
+  - OpenUDID (1.0.0)
+  - PPiAwesomeButton (1.4.7):
+    - FontAwesome+iOS
+  - SDWebImage (3.6):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.6)
+  - SSKeychain (1.2.2)
+  - SVProgressHUD (1.0)
+  - SVPullToRefresh (0.4.1)
+  - TTTAttributedLabel (1.10.0)
+  - UALogger (0.3)
+  - UIColor-Utilities (1.0.1)
+  - UIView+AutoLayout (1.3.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.2.3)
+  - CHTCollectionViewWaterfallLayout (~> 0.4)
+  - EGOCache (~> 2.0)
+  - FontAwesome+iOS (from `git@github.com:alexdrone/ios-fontawesome.git`)
+  - iOS-WebP (~> 0.3)
+  - JPush (~> 1.6.3)
+  - JSONKit (~> 1.5pre)
+  - JSONModel (~> 0.13)
+  - MHPrettyDate
+  - MMDrawerController (~> 0.5.3)
+  - Objection (~> 1.4)
+  - OpenUDID (~> 1.0.0)
+  - PPiAwesomeButton
+  - SDWebImage (~> 3.6)
+  - SSKeychain
+  - SVProgressHUD (~> 1.0)
+  - SVPullToRefresh (~> 0.4)
+  - TTTAttributedLabel
+  - UALogger (~> 0.3)
+  - UIColor-Utilities (= 1.0.1)
+  - UIView+AutoLayout
+
+EXTERNAL SOURCES:
+  FontAwesome+iOS:
+    :git: git@github.com:alexdrone/ios-fontawesome.git
+
+SPEC CHECKSUMS:
+  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  CHTCollectionViewWaterfallLayout: 184d3b6d5456b48e93ac97e93e606bd8b68aedcc
+  EGOCache: bf414333c425fe47f5182351d1dd47ebf72d8352
+  FontAwesome+iOS: 3c574273fb301c2e0a88f983551562bf8768b623
+  iOS-WebP: f8c2766a491a196a08a5c801843a0ee2bd208647
+  JPush: c432b7281f47941381fe1463feae11059dcaebcf
+  JSONKit: efef3bbd3372ff33f96b9c6f34cf4fe18e74ab69
+  JSONModel: 62ea96b49ea18a8b91ef89c249dba291d8601d82
+  MHPrettyDate: d9f42f2ec3dfece6352f18ac77aa33312174e09e
+  MMDrawerController: 45c08be28375eac9f0ecaa75f1f0e47eb38c8eb1
+  Objection: 8176a996209cdcd23490c57d6e807a25faa8d54d
+  OpenUDID: 5a23b7477755efc2d7871b57aa79ba3089c40b74
+  PPiAwesomeButton: efcaafab6c0207427a3216f34933c89c2bc93a70
+  SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
+  SSKeychain: cc48bd3ad24fcd9125adb9e0d23dd50b8bbd08b9
+  SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
+  SVPullToRefresh: d5161ebc833a38b465364412e5e307ca80bbb190
+  TTTAttributedLabel: c3a11b538bc7beb4815f156e2ba4b066929e13f9
+  UALogger: 6e4cfa6dff135f8e1ae0c8f6c60a43328c26b402
+  UIColor-Utilities: 3f13aebe447f5e19c8d3aa18c194c53116b23537
+  UIView+AutoLayout: dc24ec6114498617510af759148a05b957af1b38
+
+COCOAPODS: 0.33.1

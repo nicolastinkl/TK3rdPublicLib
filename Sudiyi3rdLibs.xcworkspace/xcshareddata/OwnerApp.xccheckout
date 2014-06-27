@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3FFC990D-079E-43D9-B375-8B7CC8332F96</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OwnerApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A7AAAAEF-9983-40EA-ADF0-25112EE1B271</key>
+		<string>ssh://github.com/TKLabs/TKOwnerApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OwnerApp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A7AAAAEF-9983-40EA-ADF0-25112EE1B271</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/TKLabs/TKOwnerApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A7AAAAEF-9983-40EA-ADF0-25112EE1B271</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A7AAAAEF-9983-40EA-ADF0-25112EE1B271</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ownerapp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
