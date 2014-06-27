@@ -5,6 +5,6 @@
 2. you can make some json parser fastest than any json model
 3. using view layout everywhere
 4. using net workings everytime
-5. using dynaic view here
+5. using dymaic view here
 
 
