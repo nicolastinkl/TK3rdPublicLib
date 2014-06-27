@@ -220,7 +220,6 @@
 		93BE380C192867A6006061EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93BE380A192867A6006061EF /* InfoPlist.strings */; };
 		93BE380E192867A6006061EF /* OwnerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BE380D192867A6006061EF /* OwnerAppTests.m */; };
 		93BE382319287261006061EF /* MDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BE382019287261006061EF /* MDAppDelegate.m */; };
-		93BE382419287261006061EF /* MDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BE382219287261006061EF /* MDViewController.m */; };
 		93BE383B192878C0006061EF /* MDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BE383A192878C0006061EF /* MDTools.m */; };
 		93BE384D1928A8AA006061EF /* TDBadgedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BE384C1928A8AA006061EF /* TDBadgedCell.m */; };
 		93BE38521928A92E006061EF /* MDFeedEasyCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BE38501928A92E006061EF /* MDFeedEasyCenterCell.m */; };
@@ -577,8 +576,6 @@
 		93BE380D192867A6006061EF /* OwnerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OwnerAppTests.m; sourceTree = "<group>"; };
 		93BE381F19287261006061EF /* MDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDAppDelegate.h; sourceTree = "<group>"; };
 		93BE382019287261006061EF /* MDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDAppDelegate.m; sourceTree = "<group>"; };
-		93BE382119287261006061EF /* MDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDViewController.h; sourceTree = "<group>"; };
-		93BE382219287261006061EF /* MDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDViewController.m; sourceTree = "<group>"; };
 		93BE383119287597006061EF /* TKUtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKUtilsMacro.h; sourceTree = "<group>"; };
 		93BE3839192878C0006061EF /* MDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDTools.h; sourceTree = "<group>"; };
 		93BE383A192878C0006061EF /* MDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDTools.m; sourceTree = "<group>"; };
@@ -1398,8 +1395,6 @@
 			isa = PBXGroup;
 			children = (
 				93BE38251928726B006061EF /* Delegate */,
-				93BE382119287261006061EF /* MDViewController.h */,
-				93BE382219287261006061EF /* MDViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1966,7 +1961,6 @@
 				9377C2E4192DA0CD00974C69 /* UIView+DCAdditions.m in Sources */,
 				93BE392E1929E257006061EF /* MDRealNameAuthPhotoCell.m in Sources */,
 				93BE38DA1928D77B006061EF /* UINavigationController+MHDismissModalView.m in Sources */,
-				93BE382419287261006061EF /* MDViewController.m in Sources */,
 				93BE38D31928D77B006061EF /* UIImage+Resize.m in Sources */,
 				93BE382319287261006061EF /* MDAppDelegate.m in Sources */,
 				93BE38DB1928D77B006061EF /* UINavigationController+OverBackBtn.m in Sources */,
